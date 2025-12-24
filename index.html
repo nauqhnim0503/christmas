@@ -144,7 +144,7 @@
         bgMusic.loop = true; bgMusic.volume = 1.0;
 
         const loader = new THREE.TextureLoader();
-        const photoFiles = ['./img/a1.jpg', './img/a2.jpg', './img/a3.jpg', './img/a4.jpg']; //Thay hoặc thêm số ảnh dòng 319 sửa ở đây và folder img
+        const photoFiles = ['a1.jpg', 'a2.jpg', 'a3.jpg', 'a4.jpg']; //Thay hoặc thêm số ảnh dòng 319 sửa ở đây và folder img
         const photoTextures = [];
         photoFiles.forEach((f, i) => photoTextures[i] = loader.load(f));
 
@@ -607,5 +607,6 @@
         function logError(e) { document.getElementById('error-log').style.display = 'block'; document.getElementById('error-log').innerText += e + "\n"; }
     </script>
 </body>
+
 
 </html>
